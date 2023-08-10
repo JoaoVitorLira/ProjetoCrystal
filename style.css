@@ -32,7 +32,14 @@ img {
     flex-wrap: wrap;
 }
 
+
 /* HEADER */
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+
 .nome {
     font: 700 40px 'Lucida', sans-serif;
     color: white;
@@ -143,4 +150,8 @@ input {
 
 #footer {
     margin-top: 60px;
+}
+
+.menu-barras{
+    display: none;
 }

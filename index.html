@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crystal</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="smartphone.css">
+    <script src="https://kit.fontawesome.com/4302f7b914.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -14,11 +16,14 @@
             <div class="logo">
                 <h1 class="nome">CRYSTAL</h1>
             </div>
-            <nav class="menu">
+            <nav id="nav-header" class="menu">
                 <a href="" class="item">Inicio</a>
                 <a href="" class="item">Planos</a>
                 <a href="" class="item">Contato</a>
             </nav>
+            <a class="menu-barras" onclick="mostrarMenu()">
+                <i id="icone" class="fas fa-bars"></i>
+            </a>
         </div>
     </header>
 
@@ -126,6 +131,23 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function mostrarMenu() {
+            var menu = document.getElementById("nav-header")
+            var icone = document.getElementById("icone")
+
+            if (getComputedStyle(menu).display == 'none') {
+                menu.style.display = "flex";
+                icone.classList.remove("fa-bars")
+                icone.classList.add("fa-times")
+            } else {
+                menu.style.display = "none";
+                icone.classList.remove("fa-times");
+                icone.classList.add("fa-bars");
+            }
+        }
+    </script>
 
 </body>
 </html>

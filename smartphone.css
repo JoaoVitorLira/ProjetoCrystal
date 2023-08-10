@@ -1,0 +1,24 @@
+.menu{
+    display:none;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(48, 48, 48, 0.9);
+    position: absolute;
+    top: 11%;
+    left: 0px;
+    height: 200px;
+    width: 100%;
+}
+
+.menu-barras{
+    display: initial;
+}
+
+#icone{
+    color: white;
+    font-size: 30px;
+}
+
+.botoes{
+    display: none;
+}
